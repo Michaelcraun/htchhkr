@@ -8,10 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		9B0D32311FD07F1C006F7805 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0D32301FD07F1C006F7805 /* AppDelegate.swift */; };
-		9B0D32331FD07F1C006F7805 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0D32321FD07F1C006F7805 /* ViewController.swift */; };
+		9B0D32331FD07F1C006F7805 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0D32321FD07F1C006F7805 /* HomeVC.swift */; };
 		9B0D32361FD07F1C006F7805 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B0D32341FD07F1C006F7805 /* Main.storyboard */; };
 		9B0D32381FD07F1C006F7805 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B0D32371FD07F1C006F7805 /* Assets.xcassets */; };
 		9B0D323B1FD07F1C006F7805 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B0D32391FD07F1C006F7805 /* LaunchScreen.storyboard */; };
+		9B0D32461FD08D96006F7805 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0D32451FD08D96006F7805 /* GradientView.swift */; };
+		9B0D32481FD091C9006F7805 /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0D32471FD091C9006F7805 /* RoundImageView.swift */; };
+		9B0D324A1FD0925C006F7805 /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0D32491FD0925C006F7805 /* RoundedShadowView.swift */; };
+		9B0D324C1FD09305006F7805 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0D324B1FD09305006F7805 /* CircleView.swift */; };
+		9B0D324E1FD0946A006F7805 /* RoundedShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0D324D1FD0946A006F7805 /* RoundedShadowButton.swift */; };
+		9B0D32501FD0A0FD006F7805 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0D324F1FD0A0FD006F7805 /* MenuVC.swift */; };
+		9B0D32521FD0A165006F7805 /* ContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0D32511FD0A165006F7805 /* ContainerVC.swift */; };
+		9B0D32551FD0A39C006F7805 /* CenterVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0D32541FD0A39C006F7805 /* CenterVCDelegate.swift */; };
+		9B0D32581FD0D65E006F7805 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0D32571FD0D65E006F7805 /* UIViewExt.swift */; };
+		9B0D325A1FD0D84B006F7805 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0D32591FD0D84B006F7805 /* LoginVC.swift */; };
+		9B0D325C1FD0E0E3006F7805 /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0D325B1FD0E0E3006F7805 /* RoundedTextField.swift */; };
+		9B0D325E1FD0EEAC006F7805 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B0D325D1FD0EEAC006F7805 /* GoogleService-Info.plist */; };
 		EA379E4B1D3FF0E5B30A20CB /* Pods_htchhkr_dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF07A288654CCBD58B825653 /* Pods_htchhkr_dev.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,11 +32,23 @@
 		6EB3E76B9F4E323607260FAC /* Pods-htchhkr-dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-htchhkr-dev.debug.xcconfig"; path = "Pods/Target Support Files/Pods-htchhkr-dev/Pods-htchhkr-dev.debug.xcconfig"; sourceTree = "<group>"; };
 		9B0D322D1FD07F1C006F7805 /* htchhkr-dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "htchhkr-dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B0D32301FD07F1C006F7805 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9B0D32321FD07F1C006F7805 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9B0D32321FD07F1C006F7805 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		9B0D32351FD07F1C006F7805 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9B0D32371FD07F1C006F7805 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B0D323A1FD07F1C006F7805 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B0D323C1FD07F1C006F7805 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B0D32451FD08D96006F7805 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		9B0D32471FD091C9006F7805 /* RoundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
+		9B0D32491FD0925C006F7805 /* RoundedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
+		9B0D324B1FD09305006F7805 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		9B0D324D1FD0946A006F7805 /* RoundedShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowButton.swift; sourceTree = "<group>"; };
+		9B0D324F1FD0A0FD006F7805 /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		9B0D32511FD0A165006F7805 /* ContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerVC.swift; sourceTree = "<group>"; };
+		9B0D32541FD0A39C006F7805 /* CenterVCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterVCDelegate.swift; sourceTree = "<group>"; };
+		9B0D32571FD0D65E006F7805 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		9B0D32591FD0D84B006F7805 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		9B0D325B1FD0E0E3006F7805 /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
+		9B0D325D1FD0EEAC006F7805 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AF07A288654CCBD58B825653 /* Pods_htchhkr_dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_htchhkr_dev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -78,14 +102,66 @@
 		9B0D322F1FD07F1C006F7805 /* htchhkr-dev */ = {
 			isa = PBXGroup;
 			children = (
+				9B0D32561FD0D652006F7805 /* Extensions */,
+				9B0D32531FD0A38F006F7805 /* Protocols */,
+				9B0D32441FD08D80006F7805 /* Model */,
+				9B0D32431FD08D47006F7805 /* View */,
+				9B0D32421FD08531006F7805 /* Controller */,
 				9B0D32301FD07F1C006F7805 /* AppDelegate.swift */,
-				9B0D32321FD07F1C006F7805 /* ViewController.swift */,
 				9B0D32341FD07F1C006F7805 /* Main.storyboard */,
 				9B0D32371FD07F1C006F7805 /* Assets.xcassets */,
 				9B0D32391FD07F1C006F7805 /* LaunchScreen.storyboard */,
 				9B0D323C1FD07F1C006F7805 /* Info.plist */,
+				9B0D325D1FD0EEAC006F7805 /* GoogleService-Info.plist */,
 			);
 			path = "htchhkr-dev";
+			sourceTree = "<group>";
+		};
+		9B0D32421FD08531006F7805 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9B0D32321FD07F1C006F7805 /* HomeVC.swift */,
+				9B0D324F1FD0A0FD006F7805 /* MenuVC.swift */,
+				9B0D32511FD0A165006F7805 /* ContainerVC.swift */,
+				9B0D32591FD0D84B006F7805 /* LoginVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9B0D32431FD08D47006F7805 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9B0D32451FD08D96006F7805 /* GradientView.swift */,
+				9B0D32471FD091C9006F7805 /* RoundImageView.swift */,
+				9B0D32491FD0925C006F7805 /* RoundedShadowView.swift */,
+				9B0D324B1FD09305006F7805 /* CircleView.swift */,
+				9B0D324D1FD0946A006F7805 /* RoundedShadowButton.swift */,
+				9B0D325B1FD0E0E3006F7805 /* RoundedTextField.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9B0D32441FD08D80006F7805 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9B0D32531FD0A38F006F7805 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9B0D32541FD0A39C006F7805 /* CenterVCDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		9B0D32561FD0D652006F7805 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9B0D32571FD0D65E006F7805 /* UIViewExt.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B0D323B1FD07F1C006F7805 /* LaunchScreen.storyboard in Resources */,
+				9B0D325E1FD0EEAC006F7805 /* GoogleService-Info.plist in Resources */,
 				9B0D32381FD07F1C006F7805 /* Assets.xcassets in Resources */,
 				9B0D32361FD07F1C006F7805 /* Main.storyboard in Resources */,
 			);
@@ -211,8 +288,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B0D32331FD07F1C006F7805 /* ViewController.swift in Sources */,
+				9B0D32551FD0A39C006F7805 /* CenterVCDelegate.swift in Sources */,
+				9B0D324E1FD0946A006F7805 /* RoundedShadowButton.swift in Sources */,
+				9B0D325A1FD0D84B006F7805 /* LoginVC.swift in Sources */,
+				9B0D325C1FD0E0E3006F7805 /* RoundedTextField.swift in Sources */,
+				9B0D324C1FD09305006F7805 /* CircleView.swift in Sources */,
+				9B0D32331FD07F1C006F7805 /* HomeVC.swift in Sources */,
+				9B0D32521FD0A165006F7805 /* ContainerVC.swift in Sources */,
+				9B0D32581FD0D65E006F7805 /* UIViewExt.swift in Sources */,
+				9B0D32481FD091C9006F7805 /* RoundImageView.swift in Sources */,
+				9B0D324A1FD0925C006F7805 /* RoundedShadowView.swift in Sources */,
+				9B0D32501FD0A0FD006F7805 /* MenuVC.swift in Sources */,
 				9B0D32311FD07F1C006F7805 /* AppDelegate.swift in Sources */,
+				9B0D32461FD08D96006F7805 /* GradientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

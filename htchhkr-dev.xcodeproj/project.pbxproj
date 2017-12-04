@@ -24,6 +24,7 @@
 		9B0D325A1FD0D84B006F7805 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0D32591FD0D84B006F7805 /* LoginVC.swift */; };
 		9B0D325C1FD0E0E3006F7805 /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0D325B1FD0E0E3006F7805 /* RoundedTextField.swift */; };
 		9B0D325E1FD0EEAC006F7805 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B0D325D1FD0EEAC006F7805 /* GoogleService-Info.plist */; };
+		9B0D32611FD1DB7A006F7805 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0D32601FD1DB7A006F7805 /* DataService.swift */; };
 		EA379E4B1D3FF0E5B30A20CB /* Pods_htchhkr_dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF07A288654CCBD58B825653 /* Pods_htchhkr_dev.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		9B0D32591FD0D84B006F7805 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		9B0D325B1FD0E0E3006F7805 /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
 		9B0D325D1FD0EEAC006F7805 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9B0D32601FD1DB7A006F7805 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		AF07A288654CCBD58B825653 /* Pods_htchhkr_dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_htchhkr_dev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -102,6 +104,7 @@
 		9B0D322F1FD07F1C006F7805 /* htchhkr-dev */ = {
 			isa = PBXGroup;
 			children = (
+				9B0D325F1FD1DB69006F7805 /* Services */,
 				9B0D32561FD0D652006F7805 /* Extensions */,
 				9B0D32531FD0A38F006F7805 /* Protocols */,
 				9B0D32441FD08D80006F7805 /* Model */,
@@ -162,6 +165,14 @@
 				9B0D32571FD0D65E006F7805 /* UIViewExt.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9B0D325F1FD1DB69006F7805 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9B0D32601FD1DB7A006F7805 /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B0D32551FD0A39C006F7805 /* CenterVCDelegate.swift in Sources */,
+				9B0D32611FD1DB7A006F7805 /* DataService.swift in Sources */,
 				9B0D324E1FD0946A006F7805 /* RoundedShadowButton.swift in Sources */,
 				9B0D325A1FD0D84B006F7805 /* LoginVC.swift in Sources */,
 				9B0D325C1FD0E0E3006F7805 /* RoundedTextField.swift in Sources */,

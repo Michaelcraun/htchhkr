@@ -14,6 +14,7 @@
         <array key="AvenirNext.ttc">
             <string>AvenirNext-Bold</string>
             <string>AvenirNext-Heavy</string>
+            <string>AvenirNext-Medium</string>
             <string>AvenirNext-Regular</string>
         </array>
     </customFonts>
@@ -308,6 +309,9 @@
                                             <state key="normal" title="SIGN UP / LOGIN">
                                                 <color key="titleColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="deviceRGB"/>
                                             </state>
+                                            <connections>
+                                                <action selector="authButtonWasPressed:" destination="bE3-UQ-AWP" eventType="touchUpInside" id="xGh-fk-FDN"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>
@@ -347,6 +351,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Rzo-on-HeE"/>
                     </view>
+                    <connections>
+                        <outlet property="authButton" destination="opc-7H-mm5" id="PmT-ju-4iE"/>
+                        <outlet property="emailField" destination="XUx-OQ-G02" id="6aj-EH-GVH"/>
+                        <outlet property="passwordField" destination="Our-cW-kpl" id="6L6-ph-dsw"/>
+                        <outlet property="segmentedControl" destination="jtO-mh-AMT" id="Ncu-hS-gPg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gKn-rs-QJ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -390,6 +400,37 @@
                                     <action selector="signUpLoginButtonWasPressed:" destination="JN8-3N-Q0j" eventType="touchUpInside" id="n0x-Ky-zFK"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DRIVER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tkg-9g-le4">
+                                <rect key="frame" x="20" y="583" width="335" height="14"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="10"/>
+                                <color key="textColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="driver@htchhkr.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uhj-SS-Hjn">
+                                <rect key="frame" x="20" y="552.5" width="335" height="20.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <color key="textColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PICKUP MODE DISABLED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkX-KO-PZ1">
+                                <rect key="frame" x="20" y="458.5" width="335" height="14"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="10"/>
+                                <color key="textColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample-photo" translatesAutoresizingMaskIntoConstraints="NO" id="V04-vb-pUB" customClass="RoundImageView" customModule="htchhkr_dev" customModuleProvider="target">
+                                <rect key="frame" x="20" y="492.5" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="QJk-sw-mbm"/>
+                                    <constraint firstAttribute="width" constant="50" id="W5X-Y7-eCq"/>
+                                </constraints>
+                            </imageView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qjr-Z4-WNj">
+                                <rect key="frame" x="20" y="417.5" width="51" height="31"/>
+                                <connections>
+                                    <action selector="pickUpToggleWasToggled:" destination="JN8-3N-Q0j" eventType="valueChanged" id="8X5-B1-g8t"/>
+                                </connections>
+                            </switch>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lPd-BU-zpv">
                                 <rect key="frame" x="20" y="110" width="114" height="180"/>
                                 <subviews>
@@ -426,20 +467,41 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Ow5-iG-pOf" firstAttribute="trailing" secondItem="Uhj-SS-Hjn" secondAttribute="trailing" constant="20" id="0jj-HS-eo0"/>
                             <constraint firstItem="2rh-sj-gi0" firstAttribute="trailing" secondItem="Ow5-iG-pOf" secondAttribute="trailing" id="6q2-gP-FPy"/>
+                            <constraint firstItem="gkX-KO-PZ1" firstAttribute="top" secondItem="qjr-Z4-WNj" secondAttribute="bottom" constant="10" id="7M0-ce-QOq"/>
+                            <constraint firstItem="Uhj-SS-Hjn" firstAttribute="top" secondItem="V04-vb-pUB" secondAttribute="bottom" constant="10" id="Crs-eC-tRD"/>
+                            <constraint firstItem="V04-vb-pUB" firstAttribute="top" secondItem="gkX-KO-PZ1" secondAttribute="bottom" constant="20" id="DGf-s2-Ia6"/>
+                            <constraint firstItem="gkX-KO-PZ1" firstAttribute="leading" secondItem="Ow5-iG-pOf" secondAttribute="leading" constant="20" id="Ee9-un-Ls2"/>
                             <constraint firstItem="2rh-sj-gi0" firstAttribute="leading" secondItem="Ow5-iG-pOf" secondAttribute="leading" id="J6M-fV-kKM"/>
+                            <constraint firstItem="Ow5-iG-pOf" firstAttribute="trailing" secondItem="Tkg-9g-le4" secondAttribute="trailing" constant="20" id="K38-ej-rkC"/>
                             <constraint firstItem="lPd-BU-zpv" firstAttribute="top" secondItem="2rh-sj-gi0" secondAttribute="bottom" constant="20" id="Nnj-8n-zVH"/>
                             <constraint firstItem="lPd-BU-zpv" firstAttribute="leading" secondItem="Ow5-iG-pOf" secondAttribute="leading" constant="20" id="THD-YN-hvS"/>
                             <constraint firstItem="Ow5-iG-pOf" firstAttribute="bottom" secondItem="pZ7-uP-j1g" secondAttribute="bottom" constant="20" id="Vti-9w-FyD"/>
+                            <constraint firstItem="qjr-Z4-WNj" firstAttribute="leading" secondItem="Ow5-iG-pOf" secondAttribute="leading" constant="20" id="aBh-Pq-LMr"/>
                             <constraint firstItem="pZ7-uP-j1g" firstAttribute="leading" secondItem="Ow5-iG-pOf" secondAttribute="leading" constant="20" id="aGG-K6-Bg9"/>
+                            <constraint firstItem="Tkg-9g-le4" firstAttribute="leading" secondItem="Ow5-iG-pOf" secondAttribute="leading" constant="20" id="bst-tT-aod"/>
+                            <constraint firstItem="Ow5-iG-pOf" firstAttribute="trailing" secondItem="gkX-KO-PZ1" secondAttribute="trailing" constant="20" id="eme-Rq-URH"/>
+                            <constraint firstItem="V04-vb-pUB" firstAttribute="leading" secondItem="Ow5-iG-pOf" secondAttribute="leading" constant="20" id="inv-bG-0Lt"/>
+                            <constraint firstItem="Uhj-SS-Hjn" firstAttribute="leading" secondItem="Ow5-iG-pOf" secondAttribute="leading" constant="20" id="k77-ar-wxg"/>
+                            <constraint firstItem="pZ7-uP-j1g" firstAttribute="top" secondItem="Tkg-9g-le4" secondAttribute="bottom" constant="5" id="lGd-Sw-UuZ"/>
                             <constraint firstItem="2rh-sj-gi0" firstAttribute="top" secondItem="luL-EW-hI1" secondAttribute="top" id="scp-FZ-is7"/>
+                            <constraint firstItem="Tkg-9g-le4" firstAttribute="top" secondItem="Uhj-SS-Hjn" secondAttribute="bottom" constant="10" id="xPy-8k-QCB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ow5-iG-pOf"/>
                     </view>
+                    <connections>
+                        <outlet property="pickUpModeLabel" destination="gkX-KO-PZ1" id="iEI-jr-K3t"/>
+                        <outlet property="pickUpToggle" destination="qjr-Z4-WNj" id="iv1-D4-75m"/>
+                        <outlet property="signUpLoginButton" destination="pZ7-uP-j1g" id="6g5-9C-4oJ"/>
+                        <outlet property="userAccountType" destination="Tkg-9g-le4" id="dG5-T2-oly"/>
+                        <outlet property="userEmail" destination="Uhj-SS-Hjn" id="UfK-BV-9rj"/>
+                        <outlet property="userImage" destination="V04-vb-pUB" id="cUU-TY-C51"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XgP-LL-mEG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-638" y="134"/>
+            <point key="canvasLocation" x="-639.20000000000005" y="133.5832083958021"/>
         </scene>
     </scenes>
     <resources>

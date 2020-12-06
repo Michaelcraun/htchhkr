@@ -46,9 +46,6 @@ class MenuVC: UIViewController {
             userImage.isHidden = false
             signUpLoginButton.setTitle("LOG OUT", for: .normal)
         }
-        
-        print(pickUpToggle.frame)
-        print(pickUpToggle.isHidden)
     }
     
     func observePassengersAndDrivers() {

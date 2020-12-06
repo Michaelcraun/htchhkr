@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class LoginVC: UIViewController, UITextFieldDelegate {
+class LoginVC: UIViewController, UITextFieldDelegate, Alertable {
 
     @IBOutlet var segmentedControl: UISegmentedControl!
     @IBOutlet var emailField: RoundedTextField!
@@ -33,6 +33,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     @objc func handleScreenTap(sender: UITapGestureRecognizer) {
         self.view.endEditing(true)
     }
+    
     @IBAction func authButtonWasPressed(_ sender: Any) {
         if emailField.text != nil && passwordField.text != nil {
             authButton.animateButton(shouldLoad: true, withMessage: nil)
@@ -58,16 +59,16 @@ class LoginVC: UIViewController, UITextFieldDelegate {
                     } else {
                         if let errorCode = FIRAuthErrorCode(rawValue: error!._code) {
                             switch errorCode {
-                            case .errorCodeEmailAlreadyInUse: print("email already in use")
-                            case .errorCodeWrongPassword: print("wrong password")
-                            case .errorCodeInvalidEmail: print("invalid email")
+                            case .errorCodeEmailAlreadyInUse: self.showAlert("That email is already in use. Pleas try again.")
+                            case .errorCodeWrongPassword: self.showAlert("That is the wrong password. Please try again.")
+                            case .errorCodeInvalidEmail: self.showAlert("That is an invalid email. Please try again.")
                             case .errorCodeUserNotFound:
                                 FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
                                     if error != nil {
                                         if let errorCode = FIRAuthErrorCode(rawValue: error!._code) {
                                             switch errorCode {
-                                            case .errorCodeInvalidEmail: print("invalid email")
-                                            default: print("unexpected error")
+                                            case .errorCodeInvalidEmail: self.showAlert("That is an invalid email. Please try again.")
+                                            default: self.showAlert("There was an unexpected error. Please try again.")
                                             }
                                         }
                                     } else {
@@ -87,7 +88,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
                                         self.dismiss(animated: true, completion: nil)
                                     }
                                 })
-                            default: print("unexpected error.")
+                            default: self.showAlert("There was an unexpected error. Please try again.")
                             }
                         }
                     }
